@@ -16,11 +16,12 @@ Including another URLconf
 """
 
 from django.urls import path
-from entertainments.views import Home
+from entertainments.views import Home, post
 
 
 urlpatterns = [
     path('', Home),
+    path('post/<int:id>/', post),
    
    
 
